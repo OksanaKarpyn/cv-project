@@ -49,7 +49,7 @@ function showSection(p){
         }
     
 }
-// homesection btn-------
+// home   section btn-------
 const hireMe = document.querySelector('.hire-me');
 const contactLink = document.querySelector('a[href="#contact"]');
 hireMe.addEventListener('click',function(){
@@ -59,4 +59,25 @@ hireMe.addEventListener('click',function(){
 
     
     contactLink.classList.add('active');
+})
+
+
+// portfolio section btnn
+
+const btnSite = document.querySelector('.btn-site');
+const detailsPortfolioIcon = document.querySelector('.portfolio-item-details i');
+const detailsPortfolio = document.querySelector('.portfolio-item-details');
+btnSite.addEventListener('click',function(){
+    if( detailsPortfolio .style.display = 'block'){
+        this.style.display = 'none';
+    }else{
+        this.style.display = 'block';
+    }
+    // detailsPortfolio .style.display = 'block';
+    
+})
+
+detailsPortfolioIcon.addEventListener('click', function(){
+    detailsPortfolio.style.display = 'none';
+    btnSite.style.display = 'block';
 })

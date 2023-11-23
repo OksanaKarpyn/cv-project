@@ -122,31 +122,8 @@ body.dark{
     font-family: 'Clicker Script', cursive;
     font-size: 30px;
 }
-.aside .logo a::before{
-    /* content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-bottom:  5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-    border-radius: 8px;
-    bottom: 0;
-    left: 0; */
-  
-}
-.aside .logo a::after{
-    /* content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-top:  5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
-    top: 0;
-    right: 0;
-    border-radius: 8px; */
 
-  
-}
+
 .aside .nav-toggler{
     height: 40px;
     width: 40px;
@@ -190,6 +167,7 @@ body.dark{
 .aside .nav li a.active{
     color: var(--skin-color);
     box-shadow: 2px 3px 4px var(--skin-color);
+    border-radius: 0px 8px 0px 8px;
     /* background-color: red; */
  
     /* transform: rotate(-180deg); */
@@ -219,7 +197,7 @@ body.dark{
 }
 /* main */
 
-/* section home */
+/* ========================================section home==================================================================================== */
 .home{
  
  min-height: 100vh;
@@ -467,9 +445,6 @@ h3.my-profession .typing{
 
     /* background-color: orange; */
 }
-.about .about-content .education{
-    /* background-color: red; */
-}
 .about .about-content h3.title{
     font-size: 24px;
     margin-bottom: 30px;
@@ -657,6 +632,7 @@ h3.my-profession .typing{
     flex:  0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 20px;
+    position: relative;
  }
  .portfolio .portfolio-item .portfolio-item-inner{
     padding: 20px;
@@ -676,8 +652,13 @@ h3.my-profession .typing{
     height: 100%;
     text-align: center;
  }
+ /* views    popup portfolio--------- */
+ .portfolio .portfolio-item .portfolio-item-details{
+    display: none;
+ }
+
  .portfolio .portfolio-item .portfolio-item-inner .portfolio-hover{
-    background-color: rgba(206, 203, 203, 0.886);
+    background-color: rgba(101, 101, 101, 0.886);
     position: absolute;
     top: 0;
     left: 0;
@@ -705,6 +686,7 @@ h3.my-profession .typing{
     border-bottom-left-radius: 10px;
     background-color: var(--bg-black-50);
     border: 2px solid var(--skin-color);
+    transition: all .4s ease;
  }
  .portfolio .portfolio-item .portfolio-item-inner .portfolio-hover .prew-btn .btn-preview a,
  .portfolio .portfolio-item .portfolio-item-inner .portfolio-hover .prew-btn .btn-site a{
