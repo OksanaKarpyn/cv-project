@@ -1,136 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/colors.css" />
+    <!-- style-swicher -->
+    <link
+      rel="stylesheet"
+      href="./css/colors/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/colors/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/colors/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/colors/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/colors/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="./css/style-swicher.css" />
 
-   <link rel="stylesheet" href="./css/colors.css">
-   <!-- style-swicher -->
-   <link rel="stylesheet" href="./css/colors/color-1.css" class="alternate-style" title="color-1" disabled>
-   <link rel="stylesheet" href="./css/colors/color-2.css" class="alternate-style" title="color-2" disabled>
-   <link rel="stylesheet" href="./css/colors/color-3.css" class="alternate-style" title="color-3" disabled>
-   <link rel="stylesheet" href="./css/colors/color-4.css" class="alternate-style" title="color-4" disabled>
-   <link rel="stylesheet" href="./css/colors/color-5.css" class="alternate-style" title="color-5"disabled>
-   <link rel="stylesheet" href="./css/style-swicher.css">
-  
-   <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <title>cv</title>
-</head>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>cv</title>
+  </head>
 
-<body class="dark">
-   <div class="wrapper">
+  <body class="dark">
+    <div class="wrapper">
       <!-- sidebar -->
       <div class="aside">
-         <div class="logo media">
-            <a href="#"><span>O</span></a>
-         </div>
-         <div class="logo">
-            <a href="#"><span>O</span>ksana</a>
-         </div>
-         <div class="nav-toggler">
-            <span><i class="fa-solid fa-bars"></i></span>
-         </div>
-         
-         <ul class="nav">
-            <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-            <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+        <div class="logo media">
+          <a href="#"><span>O</span></a>
+        </div>
+        <div class="logo">
+          <a href="#"><span>O</span>ksana</a>
+        </div>
+        <div class="nav-toggler">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
 
-         </ul>
+        <ul class="nav">
+          <li>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
+          </li>
+          <!-- <li>
+            <a href="#services"><i class="fa fa-list"></i>Services</a>
+          </li> -->
+          <li>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+          </li>
+        </ul>
       </div>
       <!-- main -->
       <div class="main-content">
-         <!-- home section -->
-         <section class="home section active" id="home">
-            <div class="container">
-               <div class="row">
-                  <div class="home-info padd-15">
-                     <h3 class="hello">Hello, is my name <span class="name"> Oksana Karpyn</span></h3>
-                     <h3 class="my-profession">I'm a <span class="typing">Web Deweloper</span></h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aperiam id consequuntur
-                        voluptatibus ipsa itaque assumenda ut magni similique tenetur, veniam fuga doloribus
-                        exercitationem distinctio tempore. Sapiente doloremque earum obcaecati dolorem distinctio
-                        repellendus blanditiis vero amet laborum, placeat ratione quibusdam nostrum itaque deleniti non
-                        voluptatem, modi debitis repellat. </p>
-                     <a href="#contact" class="btn hire-me">Contact Me</a>
-                  </div>
-                  <div class="home-img padd-15">
-                     <img src="./img/IMG_6647.JPG" alt="foto">
-                  </div>
-               </div>
+        <!-- home section -->
+        <section class="home section active" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h3 class="hello">
+                  <!-- Hello, is my name <span class="name"> Oksana Karpyn</span> -->
+                  Ciao, mi chiamo <span class="name"> Oksana Karpyn</span>
+                </h3>
+                <h3 class="my-profession">
+                  <!-- I'm a <span class="typing">Web Deweloper</span> -->
+                  Sono <span class="typing">Web Deweloper</span>
+                </h3>
+                <p>
+                  Perseguo con determinazione la mia carriera come Web
+                  Developer, appassionata nella creazione di soluzioni web. Ho
+                  sviluppato competenze solide in vari strumenti e tecnologie e
+                  sono entusiasta di continuare a crescere nel mio campo. Mi
+                  impegno a dedicare tempo ed energie per migliorare le mie
+                  abilità e acquisire nuove conoscenze, con l'obiettivo di
+                  offrire risultati di qualità e contribuire al successo dei
+                  progetti.
+                </p>
+                <a href="#contact" class="btn hire-me">Contact Me</a>
+              </div>
+              <div class="home-img padd-15">
+                <img src="./img/IMG_6647.JPG" alt="foto" />
+              </div>
             </div>
-         </section>
-         <!-- about section -->
-         <section class="about section " id="about">
-            <div class="container">
-               <div class="row">
-                  <div class="about-title padd-15">
-                     <h2>About Me</h2>
+          </div>
+        </section>
+        <!-- about section -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content">
+                <!-- about me -->
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <!-- <h3>I'm Oksana Karpyn and <span>Web Developer</span></h3> -->
+                    <h3>
+                      Sono Oksana Karpyn e sono
+                      <span>Junior Web Developer</span>
+                    </h3>
+                    <p>
+                      Perseguo con determinazione la mia carriera come Web
+                      Developer, appassionata nella creazione di soluzioni web.
+                      Ho sviluppato competenze solide in vari strumenti e
+                      tecnologie e sono entusiasta di continuare a crescere nel
+                      mio campo. Mi impegno a dedicare tempo ed energie per
+                      migliorare le mie abilità e acquisire nuove conoscenze,
+                      con l'obiettivo di offrire risultati di qualità e
+                      contribuire al successo dei progetti.
+                    </p>
                   </div>
-               </div>
-               <div class="row">
-                  <div class="about-content">
-                     <!-- about me -->
-                     <div class="row">
-                        <div class="about-text padd-15">
-                           <h3>I'm Oksana Karpyn and <span>Web Developer</span></h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium
-                              exercitationem consectetur modi porro dolorum saepe illum mollitia voluptate accusamus
-                              earum laudantium voluptates consequatur, nihil molestias? Ut deleniti quis vel blanditiis
-                              fugiat doloribus aspernatur sed officia accusamus omnis expedita, fuga voluptas fugit
-                              perspiciatis hic repudiandae? Neque numquam cumque accusantium voluptas in nemo expedita
-                              quae quasi magnam qui repellat at iste ullam sint, fugit dolorum corporis modi tempora
-                              obcaecati eum repudiandae! Quo omnis corrupti optio, quidem est culpa nihil in, minima
-                              sint assumenda temporibus autem quis eum dignissimos. Placeat nobis perspiciatis molestias
-                              facere esse odio vero at quisquam quas! Eum, soluta.
-                           </p>
-                        </div>
-                     </div>
-                     <!-- personal info -->
-                     <div class="row">
-                        <div class="personal-info padd-15">
-                           <div class="row">
-                              <div class="info-item padd-15">
-                                 <p>Birthdat : <span>19 ott 1992</span></p>
-                              </div>
-                              <div class="info-item padd-15 ">
-                                 <p>Age : <span>31</span></p>
-                              </div>
-                              <div class="info-item padd-15">
-                                 <p>Website: <span>www.domain.com</span></p>
-                              </div>
-                              <div class="info-item padd-15">
-                                 <p>Email : <span>19 ott 1992</span></p>
-                              </div>
-                              <div class="info-item padd-15">
-                                 <p>Degree : <span>css</span></p>
-                              </div>
-                              <div class="info-item padd-15">
-                                 <p>Phone : <span>css</span></p>
-                              </div>
-                              <div class="info-item padd-15">
-                                 <p>City : <span>css</span></p>
-                              </div>
-                              <div class="info-item padd-15">
-                                 <p>Frilancer : <span>css</span></p>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="buttons padd-15">
-                                 <a href="#" class="btn">Downland CV</a>
-                                 <a href="#contact" class="btn hire-me">Hire Mi</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="skills padd-15">
+                </div>
+                <!-- personal info -->
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <div class="row">
+                      <!-- <div class="info-item padd-15">
+                        <p>Birthday: <span>19 ott 1992</span></p>
+                      </div> -->
+                      <!-- <div class="info-item padd-15">
+                        <p>Age: <span>31</span></p>
+                      </div> -->
+                      <!-- <div class="info-item padd-15">
+                        <p>Website: <span>www.domain.com</span></p>
+                      </div> -->
+                      <div class="info-item padd-15">
+                        <p>
+                          Email:
+                          <a href="mailto:oksanakarpyn1@gmail.com"
+                            ><span>oksanakarpyn1@gmail.com</span></a
+                          >
+                        </p>
+                      </div>
+                      <!-- <div class="info-item padd-15">
+                        <p>Degree : <span>css</span></p>
+                      </div> -->
+                      <div class="info-item padd-15">
+                        <p>Phone: <span>+39 388 349 2562</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>City: <span>Bardolino (VR)</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>
+                          linkedin:
+                          <a href="https://github.com/OksanaKarpyn">
+                            <span>github.com/OksanaKarpyn</span></a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="buttons padd-15">
+                        <a href="#" class="btn">Downland CV</a>
+                        <!-- <a href="#contact" class="btn hire-me">Hire Mi</a> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- section skills -->
+                  <!-- <div class="skills padd-15">
                            <div class="row">
                               <div class="skill-item padd-15">
                                  <h5>HTML</h5>
@@ -161,356 +234,494 @@
                                  </div>
                               </div>
                            </div>
+                        </div> -->
+                </div>
+                <!-- experience-education -->
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <!-- education -->
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-box">
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
                         </div>
-                     </div>
-                      <!-- experience-education -->
-                     <div class="row">
-                        <div class="education padd-15">
-                           <h3 class="title">Education</h3>
-                           <!-- education -->
-                           <div class="row">
-                              <div class="timeline-box padd-15">
-                                 <div class="timeline shadow-box">
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
+                      </div>
+                    </div>
+                  </div>
 
-                                 </div>
-                              </div>
-                           </div>
+                  <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                    <!-- experience -->
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-box">
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2016
+                            </h3>
+                            <h4 class="timeline-title">Diploma superiore</h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Nesciunt temporibus, quos
+                              incidunt fuga unde veniam explicabo minus dolorum
+                              officia adipisci iusto ipsum. Maiores, cum,
+                              reiciendis soluta, quo temporibus eligendi
+                              sapiente cumque natus laboriosam minus est nihil
+                              ullam odio necessitatibus maxime unde officia
+                              velit? Nobis voluptatum nesciunt obcaecati
+                              repellendus assumenda autem.
+                            </p>
+                          </div>
                         </div>
-                     
-                        <div class="experience padd-15">
-                           <h3 class="title">Experience</h3>
-                           <!-- experience -->
-                           <div class="row">
-                              <div class="timeline-box padd-15">
-                                 <div class="timeline shadow-box">
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                       <div class="circle-dot"></div>
-                                       <h3 class="timeline-date"><i class="fa fa-calendar"></i>2013-2016
-                                       </h3>
-                                       <h4 class="timeline-title">Diploma superiore</h4>
-                                       <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus, quos incidunt fuga unde veniam explicabo minus dolorum officia adipisci iusto ipsum. Maiores, cum, reiciendis soluta, quo temporibus eligendi sapiente cumque natus laboriosam minus est nihil ullam odio necessitatibus maxime unde officia velit? Nobis voluptatum nesciunt obcaecati repellendus assumenda autem.</p>
-                                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- servicess section -->
+        <!-- <section class="services section" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="services-title padd-15">
+                <h2>Services</h2>
+              </div>
+            </div>
+            <div class="row">
+             
+              <div class="service-item">
+                <div class="service-inner-item padd-15">
+                  <div class="icon">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit aspernatur eum impedit laudantium, enim esse architecto
+                    vero accusamus officia unde facilis praesentium excepturi
+                    vitae quo quibusdam fugit eveniet at voluptas blanditiis
+                    explicabo adipisci ab non sequi. Dolor dolore expedita vel
+                    architecto odit eaque. Similique in ducimus cupiditate
+                    voluptates, sint ad.
+                  </p>
+                </div>
+              </div>
+            
+              <div class="service-item">
+                <div class="service-inner-item padd-15">
+                  <div class="icon">
+                    <i class="fa fa-laptop-code"></i>
+                  </div>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit aspernatur eum impedit laudantium, enim esse architecto
+                    vero accusamus officia unde facilis
+                  </p>
+                </div>
+              </div>
+           
+              <div class="service-item">
+                <div class="service-inner-item padd-15">
+                  <div class="icon">
+                    <i class="fa fa-palette"></i>
+                  </div>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit aspernatur eum impedit laudantium, enim esse architecto
+                    vero accusamus officia unde facilis praesentium excepturi
+                    vitae quo quibusdam fugit eveniet at voluptas blanditiis
+                    explicabo adipisci ab non sequi. Dolor dolore expedita vel
+                    architecto odit eaque. Similique in ducimus cupiditate
+                    voluptates, sint ad.
+                  </p>
+                </div>
+              </div>
+         
+              <div class="service-item padd-15">
+                <div class="service-inner-item">
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit aspernatur eum impedit laudantium, enim esse architecto
+                    vero accusamus officia unde facilis praesentium excepturi
+                    vitae quo quibusdam fugit eveniet at voluptas blanditiis
+                    explicabo adipisci ab non sequi. Dolor dolore expedita vel
+                    architecto odit eaque. Similique in ducimus cupiditate
+                    voluptates, sint ad.
+                  </p>
+                </div>
+              </div>
+           
+              <div class="service-item padd-15">
+                <div class="service-inner-item">
+                  <div class="icon">
+                    <i class="fa fa-bullhorn"></i>
+                  </div>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit aspernatur eum impedit laudantium, enim esse architecto
+                    vero accusamus officia unde facilis praesentium excepturi
+                    vitae quo quibusdam fugit eveniet at voluptas blanditiis
+                    explicabo adipisci ab non sequi. Dolor dolore expedita vel
+                    architecto odit eaque. Similique in ducimus cupiditate
+                    voluptates, sint ad.
+                  </p>
+                </div>
+              </div>
+            
+              <div class="service-item padd-15">
+                <div class="service-inner-item">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit aspernatur eum impedit laudantium, enim esse architecto
+                    vero accusamus officia unde facilis praesentium excepturi
+                    vitae quo quibusdam fugit eveniet at voluptas blanditiis
+                    explicabo adipisci ab non sequi. Dolor dolore expedita vel
+                    architecto odit eaque. Similique in ducimus cupiditate
+                    voluptates, sint ad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
 
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-              
+        <!-- portfolio section -->
+        <section class="portfolio section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="portfolio-title padd-15">
+                <h2>Portfolio</h2>
+              </div>
             </div>
-         </section>
-         <!-- servicess section -->
-         <section class="services section " id="services">
-            <div class="container">
-               <div class="row">
-                  <div class="services-title padd-15">
-                     <h2>Services</h2>
-                  </div>
-               </div>
-               <div class="row">
-                  <!-- services item -->
-                  <div class="service-item">
-                     <div class="service-inner-item padd-15">
-                        <div class="icon">
-                           <i class="fa fa-mobile-alt"></i>
-                        </div>
-                        <h4>Web Developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eum impedit laudantium, enim esse architecto vero accusamus officia unde facilis praesentium excepturi vitae quo quibusdam fugit eveniet at voluptas blanditiis explicabo adipisci ab non sequi. Dolor dolore expedita vel architecto odit eaque. Similique in ducimus cupiditate voluptates, sint ad.</p>
-                     </div>
-                  </div>
-                  <!-- services item -->
-                  <div class="service-item">
-                     <div class="service-inner-item padd-15">
-                        <div class="icon">
-                           <i class="fa fa-laptop-code"></i>
-                        </div>
-                        <h4>Web Developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eum impedit laudantium, enim esse architecto vero accusamus officia unde facilis </p>
-                     </div>
-                  </div>
-                  <!-- services item -->
-                  <div class="service-item">
-                     <div class="service-inner-item padd-15">
-                        <div class="icon">
-                           <i class="fa fa-palette"></i>
-                        </div>
-                        <h4>Web Developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eum impedit laudantium, enim esse architecto vero accusamus officia unde facilis praesentium excepturi vitae quo quibusdam fugit eveniet at voluptas blanditiis explicabo adipisci ab non sequi. Dolor dolore expedita vel architecto odit eaque. Similique in ducimus cupiditate voluptates, sint ad.</p>
-                     </div>
-                  </div>
-                  <!-- services item -->
-                  <div class="service-item padd-15">
-                     <div class="service-inner-item">
-                        <div class="icon">
-                           <i class="fa fa-search"></i>
-                        </div>
-                        <h4>Web Developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eum impedit laudantium, enim esse architecto vero accusamus officia unde facilis praesentium excepturi vitae quo quibusdam fugit eveniet at voluptas blanditiis explicabo adipisci ab non sequi. Dolor dolore expedita vel architecto odit eaque. Similique in ducimus cupiditate voluptates, sint ad.</p>
-                     </div>
-                  </div>
-                  <!-- services item -->
-                  <div class="service-item padd-15">
-                     <div class="service-inner-item">
-                        <div class="icon">
-                           <i class="fa fa-bullhorn"></i>
-                        </div>
-                        <h4>Web Developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eum impedit laudantium, enim esse architecto vero accusamus officia unde facilis praesentium excepturi vitae quo quibusdam fugit eveniet at voluptas blanditiis explicabo adipisci ab non sequi. Dolor dolore expedita vel architecto odit eaque. Similique in ducimus cupiditate voluptates, sint ad.</p>
-                     </div>
-                  </div>
-                  <!-- services item -->
-                  <div class="service-item padd-15">
-                     <div class="service-inner-item">
-                        <div class="icon">
-                           <i class="fa fa-code"></i>
-                        </div>
-                        <h4>Web Developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur eum impedit laudantium, enim esse architecto vero accusamus officia unde facilis praesentium excepturi vitae quo quibusdam fugit eveniet at voluptas blanditiis explicabo adipisci ab non sequi. Dolor dolore expedita vel architecto odit eaque. Similique in ducimus cupiditate voluptates, sint ad.</p>
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>My last projects :</h2>
+              </div>
             </div>
-         </section>
-         <!-- portfolio section -->
-         <section class="portfolio section" id="portfolio">
-            <div class="container">
-               <div class="row">
-                  <div class="portfolio-title padd-15">
-                     <h2>Portfolio</h2>
+            <div class="row">
+              <!-- portfolio item -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-box">
+                  <div class="portfolio-img">
+                    <img src="./img/projects/player_left.jpg" alt="" />
                   </div>
-               </div>
-               <div class="row">
-                  <div class="portfolio-heading padd-15">
-                     <h2>My last projects : </h2>
+                  <div class="portfolio-hover">
+                    <h5>Replica project Spotify</h5>
+                    <div class="padd-15 prew-btn">
+                      <div class="btn btn-site">
+                        <a href="#">site</a>
+                      </div>
+                    </div>
                   </div>
-               </div>
-               <div class="row">
-                 <!-- portfolio item -->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-box">
-                       <div class="portfolio-img">
-                          <img src="./img/projects/player_left.jpg" alt="">
-                       </div>
-                       <div class="portfolio-hover">
-                         <h5>Replica project Spotify</h5>
-                         <div class =" padd-15 prew-btn">
-                          
-                            <div class="btn btn-site">
-                               <a href="#">site</a>
-                            </div>
-                         </div>
-                       </div>
-                    </div>
-                    
-                    <div class="portfolio-item-details">
-                     <div class="row">
-                        <div class="portfolio-img-popup">
-                           <img src="#" alt="">
-                        </div>
-                        <div class="portfolio-body-details">
-                           <i class="fa-solid fa-x"></i>
-                           <h3 class="details-title">App Design</h3>
-                           <p class="details-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, nihil?</p>
-                           <lu class="details-list-info">
-                              <li>Created - <span>4 dec 2023</span></li>
-                              <li>Tecnologies - <span>Html Css</span></li>
-                              <li>Role- <span>Frontend</span></li>
-                              <li>View -<span><a href="#">git.info</a></span></li>
-                           </lu>
-                        </div>
-                        
-                     </div>
-                    </div>
-                 </div>
-                 <!--  -->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-box">
-                       <div class="portfolio-img">
-                          <img src="./img/projects/player_left.jpg" alt="">
-                       </div>
-                       <div class="portfolio-hover">
-                        <h5>Replica project Spotify</h5>
-                        <div class =" padd-15 prew-btn">
-                           <!-- <div class="btn btn-preview">
-                              <a href="#">look</a>
-                           </div> -->
-                           <div class="btn btn-site">
-                              <a href="#">site</a>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-box">
-                       <div class="portfolio-img">
-                          <img src="./img/projects/player_left.jpg" alt="">
-                       </div>
-                       <div class="portfolio-hover">
-                        <h5>Replica project Spotify</h5>
-                        <div class =" padd-15 prew-btn">
-                           <!-- <div class="btn btn-preview">
-                              <a href="#">look</a>
-                           </div> -->
-                           <div class="btn btn-site">
-                              <a href="#">site</a>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <!--  -->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-box">
-                       <div class="portfolio-img">
-                          <img src="./img/projects/player_left.jpg" alt="">
-                       </div>
-                       <div class="portfolio-hover">
-                        <h5>Replica project Spotify</h5>
-                        <div class =" padd-15 prew-btn">
-                           <!-- <div class="btn btn-preview">
-                              <a href="#">look</a>
-                           </div> -->
-                           <div class="btn btn-site">
-                              <a href="#">site</a>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <!--  -->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-box">
-                       <div class="portfolio-img">
-                          <img src="./img/projects/player_left.jpg" alt="">
-                       </div>
-                       <div class="portfolio-hover">
-                        <h5>Replica project Spotify</h5>
-                        <div class =" padd-15 prew-btn">
-                           <!-- <div class="btn btn-preview">
-                              <a href="#">look</a>
-                           </div> -->
-                           <div class="btn btn-site">
-                              <a href="#">site</a>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <!--  -->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-box">
-                       <div class="portfolio-img">
-                          <img src="./img/projects/player_left.jpg" alt="">
-                       </div>
-                       <div class="portfolio-hover">
-                        <h5>Replica project Spotify</h5>
-                        <div class =" padd-15 prew-btn">
-                           <!-- <div class="btn btn-preview">
-                              <a href="#">look</a>
-                           </div> -->
-                           <div class="btn btn-site">
-                              <a href="#">site</a>
-                           </div>
-                        </div>
-                      </div>
-                   </div>
-                 </div>
-               </div>
-            </div>
-         </section>
-         <!-- contact section -->
-         <section class="contact section padd-15" id="contact">
-            <div class="container">
-               <div class="row">
-                  <div class="contact-title">
-                     <h2>Contact Me</h2>
-                  </div>
-               </div>
-               <h3 class="contact-titles">Have You any questions?</h3>
-               <h4 class="contact-sub-title">My personal information</h4>
-               <div class="row">
+                </div>
+
+                <div class="portfolio-item-details">
                   <div class="row">
-                     <div class="personal-info padd-15">
-                        <div class="row">
-                          
-                           <div class="info-item padd-15">
-                              <p>Linkedin: <span>https://www.linkedin.com/in/oksana-karpyn/</span></p>
-                           </div>
-                           <div class="info-item padd-15">
-                              <p>Email : <span>oksanakarpyn1@gmail.com</span></p>
-                           </div>
-                        
-                           <div class="info-item padd-15">
-                              <p>Phone : <span>+393883492562</span></p>
-                           </div>
-                           <div class="info-item padd-15">
-                              <p>Location: <span>Bardolino(VR)</span></p>
-                           </div>
-                        </div>
-                     </div>
+                    <div class="portfolio-img-popup">
+                      <img src="#" alt="" />
+                    </div>
+                    <div class="portfolio-body-details">
+                      <i class="fa-solid fa-x"></i>
+                      <h3 class="details-title">App Design</h3>
+                      <p class="details-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Facilis, nihil?
+                      </p>
+                      <lu class="details-list-info">
+                        <li>Created - <span>4 dec 2023</span></li>
+                        <li>Tecnologies - <span>Html Css</span></li>
+                        <li>Role- <span>Frontend</span></li>
+                        <li>
+                          View -<span><a href="#">git.info</a></span>
+                        </li>
+                      </lu>
+                    </div>
                   </div>
-               </div>
-               <!-- <div class="row">
+                </div>
+              </div>
+              <!--  -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-box">
+                  <div class="portfolio-img">
+                    <img src="./img/projects/player_left.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-hover">
+                    <h5>Replica project Spotify</h5>
+                    <div class="padd-15 prew-btn">
+                      <!-- <div class="btn btn-preview">
+                              <a href="#">look</a>
+                           </div> -->
+                      <div class="btn btn-site">
+                        <a href="#">site</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-box">
+                  <div class="portfolio-img">
+                    <img src="./img/projects/player_left.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-hover">
+                    <h5>Replica project Spotify</h5>
+                    <div class="padd-15 prew-btn">
+                      <!-- <div class="btn btn-preview">
+                              <a href="#">look</a>
+                           </div> -->
+                      <div class="btn btn-site">
+                        <a href="#">site</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-box">
+                  <div class="portfolio-img">
+                    <img src="./img/projects/player_left.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-hover">
+                    <h5>Replica project Spotify</h5>
+                    <div class="padd-15 prew-btn">
+                      <!-- <div class="btn btn-preview">
+                              <a href="#">look</a>
+                           </div> -->
+                      <div class="btn btn-site">
+                        <a href="#">site</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-box">
+                  <div class="portfolio-img">
+                    <img src="./img/projects/player_left.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-hover">
+                    <h5>Replica project Spotify</h5>
+                    <div class="padd-15 prew-btn">
+                      <!-- <div class="btn btn-preview">
+                              <a href="#">look</a>
+                           </div> -->
+                      <div class="btn btn-site">
+                        <a href="#">site</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-box">
+                  <div class="portfolio-img">
+                    <img src="./img/projects/player_left.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-hover">
+                    <h5>Replica project Spotify</h5>
+                    <div class="padd-15 prew-btn">
+                      <!-- <div class="btn btn-preview">
+                              <a href="#">look</a>
+                           </div> -->
+                      <div class="btn btn-site">
+                        <a href="#">site</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact section -->
+        <section class="contact section padd-15" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-title">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+            <h3 class="contact-titles">Have You any questions?</h3>
+            <h4 class="contact-sub-title">My personal information</h4>
+            <div class="row">
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>
+                        Linkedin:
+                        <a
+                          href="https://www.linkedin.com/in/oksana-karpyn/"
+                        ></a>
+                        <span>linkedin.com/in/oksana-karpyn</span>
+                      </p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>oksanakarpyn1@gmail.com</span></p>
+                    </div>
+
+                    <div class="info-item padd-15">
+                      <p>Phone : <span>+393883492562</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Location: <span>Bardolino(VR)</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row">
              
                   <div class="contact-info-item padd-15">
                      <div class="icon">
@@ -547,54 +758,82 @@
                      </div>
                   </div>
                </div> -->
-               <div class="row">
-                  <h3 class="contact-titles">Send me email message</h3>
-
-               </div>
-               <div class="row">
-                  <div class="contact-form">
-                     <form action="#">
-                        <div class="mb-3">
-                           <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                         </div>
-                         <div class="mb-3">
-                           <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                         </div>
-                         <div class="col-12">
-                           <button class="btn" type="submit">Submit form</button>
-                         </div>
-                     </form>
-                  </div>
-               </div>
+            <div class="row">
+              <h3 class="contact-titles">Send me email message</h3>
             </div>
-         </section>
+            <div class="row">
+              <div class="contact-form">
+                <form action="#" id="contact-form">
+                  <div class="mb-3">
+                    <label for="email" class="form-label contact-titles"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Inserisci la tua email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label contact-titles"
+                      >Messaggio</label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      id="exampleFormControlTextarea1"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn" type="submit">Invia</button>
+                  </div>
+                  <p class="contact-message" id="contact-message"></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-<!-- style swicher  -->
-</div>
-<div class="style-swicher">
-   <div class="style-swicher-toggler s-icon">
-      <i class="fas fa-cog fa-spin"></i> <!--si gira da solo-->
-   </div>
-   <div class="day-night s-icon">
-      <i class="fas fa-sun"></i>
-   </div>
-   <h4>Theme Colors</h4>
-   <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      <!-- style swicher  -->
+    </div>
+    <div class="style-swicher">
+      <div class="style-swicher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+        <!--si gira da solo-->
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas fa-sun"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
 
-   </div>
-</div>
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="./js/style-swicher.js"></script>
-   <script src="./js/app.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- email -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./js/style-swicher.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

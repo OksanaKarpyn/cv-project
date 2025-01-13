@@ -363,8 +363,8 @@ h3.my-profession .typing{
     color: var(--text-black-700);
  }
  .about .about-content .personal-info{
-    flex:  0 0 60%;
-    max-width: 60%;
+    flex:  0 0 70%;
+    max-width: 70%;
     /* background-color: red; */
     margin-top: 40px;
  }
@@ -393,6 +393,11 @@ h3.my-profession .typing{
     margin-top: 10px; */
     margin: 10px 15px 0 0;
  }
+ .about .about-content .personal-info .buttons .btn:hover{
+    border:1.5px solid var(--skin-color);
+    color: var(--skin-color);
+    /* font-weight: 600; */
+}
 
  /* ----my skills */
  .about .about-content .skills{
