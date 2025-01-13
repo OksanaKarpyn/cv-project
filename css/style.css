@@ -996,6 +996,7 @@ h3.my-profession .typing{
     }
 }
 @media (max-width:687px){
+    
     .home .home-img{
         display: none;
     }
@@ -1003,10 +1004,23 @@ h3.my-profession .typing{
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .home .home-info .my-profession{
+       display: none;
+       
+    }
+    .home .home-info .name{
+        padding-left: 0px;
+    }
 }
 @media (max-width:576px){
-   
-   
+   .aside{
+       padding-top: 0%;
+       padding-bottom: 0%;
+    }
+
+    .home{
+        padding-bottom: 10%;
+    }
     .home .home-img{
         display: none;
     }
