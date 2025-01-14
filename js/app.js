@@ -61,24 +61,61 @@ hireMe.addEventListener("click", function () {
 
 // portfolio section btnn
 
-const btnSite = document.querySelector(".btn-site");
-const detailsPortfolioIcon = document.querySelector(
-  ".portfolio-item-details i"
-);
-const detailsPortfolio = document.querySelector(".portfolio-item-details");
-btnSite.addEventListener("click", function () {
-  if ((detailsPortfolio.style.display = "block")) {
-    this.style.display = "none";
-  } else {
-    this.style.display = "block";
-  }
-  // detailsPortfolio .style.display = 'block';
+// const btnSite = document.querySelector(".btn-site");
+// const detailsPortfolioIcon = document.querySelector(
+//   ".portfolio-item-details i"
+// );
+// const detailsPortfolio = document.querySelector(".portfolio-item-details");
+// btnSite.addEventListener("click", function () {
+//   if ((detailsPortfolio.style.display = "block")) {
+//     this.style.display = "none";
+//   } else {
+//     this.style.display = "block";
+//   }
+//   // detailsPortfolio .style.display = 'block';
+// });
+
+// detailsPortfolioIcon.addEventListener("click", function () {
+//   detailsPortfolio.style.display = "none";
+//   btnSite.style.display = "block";
+// });
+
+//video
+
+const videoButtons = document.querySelectorAll(".video-button");
+
+videoButtons.forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault(); // Previene il comportamento predefinito del link
+
+    const portfolioItemDetails = this.closest(".portfolio-item").querySelector(
+      ".portfolio-item-video-details"
+    );
+    const videoSource = portfolioItemDetails.querySelector("source");
+
+    // Imposta la sorgente del video
+    const videoSrc = this.getAttribute("data-video-src");
+    videoSource.src = videoSrc;
+
+    // Mostra il video e avvia la riproduzione
+    portfolioItemDetails.style.display = "block";
+    const videoElement = portfolioItemDetails.querySelector("video");
+    videoElement.load(); // Ricarica il video con la nuova sorgente
+    videoElement.play(); // Avvia la riproduzione del video
+  });
 });
 
-detailsPortfolioIcon.addEventListener("click", function () {
-  detailsPortfolio.style.display = "none";
-  btnSite.style.display = "block";
+// Chiudi il video al clic sull'icona
+const detailsPortfolioIcons = document.querySelectorAll(
+  ".portfolio-item-video-details button"
+);
+detailsPortfolioIcons.forEach((icon) => {
+  icon.addEventListener("click", function () {
+    const portfolioItemDetails = this.closest(".portfolio-item-video-details");
+    portfolioItemDetails.style.display = "none";
+  });
 });
+
 // ==============================contact info==================
 
 const contactForm = document.querySelector("#contact-form"),
