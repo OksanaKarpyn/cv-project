@@ -641,7 +641,7 @@ h3.my-profession .typing{
  }
  .portfolio .portfolio-item .portfolio-item-inner{
     padding: 20px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     position: relative;
     border-radius: 10px;
 
@@ -663,7 +663,8 @@ h3.my-profession .typing{
  }
 
  .portfolio .portfolio-item .portfolio-item-inner .portfolio-hover{
-    background-color: rgba(101, 101, 101, 0.886);
+    height: 100%;
+    background-color: rgba(55, 54, 54, 0.451);
     position: absolute;
     top: 0;
     left: 0;
@@ -688,7 +689,7 @@ h3.my-profession .typing{
  .portfolio .portfolio-item .portfolio-item-inner .portfolio-hover .prew-btn .btn-preview,
  .portfolio .portfolio-item .portfolio-item-inner .portfolio-hover .prew-btn .btn-site {
 
-    border-bottom-left-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
     background-color: var(--bg-black-50);
     border: 2px solid var(--skin-color);
     transition: all .4s ease;
@@ -704,6 +705,18 @@ h3.my-profession .typing{
     margin-bottom: 23px;
     color: var(--text-black-900);
  }
+/* portfolio  ----- video---- */
+.portfolio-item-video-details {
+display: none;
+}
+.portfolio-item-video-details .btn:hover{
+    border:1.5px solid var(--skin-color);
+    color: var(--skin-color);
+}
+.portfolio-item-video-details video source{
+    margin-top: -20px;
+
+}
 
  /* -------------------section contact ------------------*/
  .contact .contact-title{
@@ -809,9 +822,6 @@ h3.my-profession .typing{
 @media (max-width:1199px){
     .aside{
         left: -200px;
-
-
-
     }
 
 /* =========================================================== */
@@ -980,7 +990,7 @@ h3.my-profession .typing{
     .services .service-item,
     .portfolio .portfolio-item{
         flex:  0 0 50%;
-        max-width: 50%;
+        /* max-width: 50%; */
     }
     .contact .personal-info .info-item{
         flex:  0 0 100%;
@@ -993,6 +1003,24 @@ h3.my-profession .typing{
     .about .about-content .skills{
         flex:  0 0 100%;
         max-width: 100%;
+    }
+    /* .portfolio-item-video-details {
+        margin-top: 10%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .portfolio-item-video-details video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    } */
+    .portfolio-item-video-details video {
+        width: 100%;
+        height: 100%;
     }
 }
 @media (max-width:687px){
@@ -1010,6 +1038,15 @@ h3.my-profession .typing{
     }
     .home .home-info .name{
         padding-left: 0px;
+    }
+    .portfolio-item{
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width:100%;
+    }
+    .portfolio-item-video-details video {
+        width: 100%;
+        height: 100%;
     }
 }
 @media (max-width:576px){
@@ -1036,5 +1073,9 @@ h3.my-profession .typing{
     .about .about-content .personal-info .info-item{
         flex:  0 0 100%;
         max-width: 100%;
+    }
+    .portfolio-item-video-details video {
+        width: 100%;
+        height: 100%;
     }
 }
