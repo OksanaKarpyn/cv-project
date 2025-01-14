@@ -606,20 +606,19 @@ h3.my-profession .typing{
  }
  /* ----------------section portfolio----------------- */
 .portfolio .container{
-    padding-bottom: 40px;
-    /* border: 1px solid red  ; */
+    /* padding-bottom: 40px; */
+    /* border: 1px solid red; */
 }
  .portfolio .portfolio-title{
     flex: 0 0 100%;
     max-width: 100%;
-    /* background: red; */
     margin-bottom: 50px;
  }
  .portfolio .portfolio-title h2{
     font-size: 40px;
     color: var(--text-black-900);
     font-weight: 700;
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     padding: 8px 20px;
     box-shadow: 2px 3px 4px var(--skin-color);
@@ -633,11 +632,19 @@ h3.my-profession .typing{
     text-transform: capitalize;
     margin-bottom: 30px;
  }
- .portfolio .portfolio-item {
-    flex:  0 0 33.33%;
-    max-width: 33.33%;
-    margin-bottom: 20px;
+ .portfolio .portfolio-items-content{
     position: relative;
+    width: 100%;
+    height: 100%;
+  
+
+ }
+ .portfolio .portfolio-item {
+    /* flex:  0 0 33.33%; */
+    /* max-width: 33.33%; */
+    margin-bottom: 20px;
+    /* background-color: yellow; */
+    /* position: relative; */
  }
  .portfolio .portfolio-item .portfolio-item-inner{
     padding: 20px;
@@ -707,16 +714,27 @@ h3.my-profession .typing{
  }
 /* portfolio  ----- video---- */
 .portfolio-item-video-details {
-display: none;
+    display: none;
+    position: absolute;
+    margin-left:10%;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #39393990;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
 }
 .portfolio-item-video-details .btn:hover{
     border:1.5px solid var(--skin-color);
     color: var(--skin-color);
 }
-.portfolio-item-video-details video source{
-    margin-top: -20px;
 
-}
 
  /* -------------------section contact ------------------*/
  .contact .contact-title{
